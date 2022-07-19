@@ -17,6 +17,7 @@ services:
     ports: 
       - "3306:3306"
     restart: always
+    container_name: mysql
     volumes: 
       - "/home/ubuntu/nuskusa-infra/mysql:/var/lib/mysql"
     environment:
@@ -32,6 +33,7 @@ services:
       - ADMINER_DEFAULT_SERVER=mysql
     ports:
       - 8080:8080
+
   nginx:
     build: ./nginx/
     stdin_open: true # docker run -i
