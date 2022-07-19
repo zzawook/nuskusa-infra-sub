@@ -88,7 +88,6 @@ CREATE TABLE `events` (
 
 DROP TABLE IF EXISTS `permissions`;
 CREATE TABLE `permissions` (
-  `id` bigint NOT NULL AUTO_INCREMENT,
   `role` int NOT NULL,
   `board` bigint NOT NULL,
   PRIMARY KEY (`id`),
@@ -157,6 +156,7 @@ CREATE TABLE `users` (
   `verified` tinyint(1) NOT NULL,
   `emailVerified` tinyint(1) NOT NULL,
   `role` tinytext CHARACTER SET utf32 COLLATE utf32_unicode_ci NOT NULL,
+  `profileImageUrl` text CHARACTER SET utf32 COLLATE utf32_unicode_ci,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_unicode_ci;
 
