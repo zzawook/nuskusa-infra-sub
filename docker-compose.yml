@@ -19,7 +19,7 @@ services:
     restart: always
     container_name: mysql
     volumes: 
-      - "/home/ubuntu/nuskusa-infra/mysql:/var/lib/mysql"
+      - "/home/ubuntu/nuskusa-infra/mysql/volume:/var/lib/mysql"
     environment:
       - MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD
       - MYSQL_USER=$MYSQL_USER

@@ -88,6 +88,7 @@ CREATE TABLE `events` (
 
 DROP TABLE IF EXISTS `permissions`;
 CREATE TABLE `permissions` (
+  `id` tinyint NOT NULL AUTO_INCREMENT,
   `role` int NOT NULL,
   `board` bigint NOT NULL,
   PRIMARY KEY (`id`),
@@ -160,5 +161,4 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_unicode_ci;
 
-GRANT ALL PRIVILEGES ON `nuskusa`.* TO 'nuskusa-admin'@'localhost';
 -- 2022-07-10 08:04:56
