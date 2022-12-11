@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/kjaehyeok21/mydev/nuskusa-infra'
+make: Leaving directory '/home/kjaehyeok21/mydev/nuskusa-infra'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
